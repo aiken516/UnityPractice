@@ -388,6 +388,7 @@
 "Assets/Script/ScriptableObject/Effect_Move.cs"
 "Assets/Script/ScriptableObject/RangeSO.cs"
 "Assets/Script/ScriptableObject/SkillSO.cs"
+"Assets/Script/UI/ManaGuage.cs"
 -langversion:9.0
 
 /deterministic

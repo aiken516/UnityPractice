@@ -8,6 +8,8 @@ using UnityEngine;
 
 public class BattleManager : MonoBehaviour
 {
+    // 마나 UI
+    [SerializeField] ManaGuage PlayerMana;
     // 전투가 진행되는 필드
     #region BattleField
     [SerializeField] Field _BattleField;
@@ -95,5 +97,12 @@ public class BattleManager : MonoBehaviour
 
             yield return new WaitForSeconds(0.5f);
         }
+
+        TurnEnd();
+    }
+
+    void TurnEnd()
+    {
+        PlayerMana.AddMana(2);
     }
 }
